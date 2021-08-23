@@ -1,0 +1,4 @@
+Django>=3.2,<3.3
+
+# PostgreSQLへ接続するためのドライバ
+psycopg2-binary>=2.8
