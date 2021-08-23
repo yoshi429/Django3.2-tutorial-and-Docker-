@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 
+
+
 {%  if not created %}
     <form action="." method="POST">
         {% csrf_token %}
-        <input type="text" name='title' placeholder="Title" />
-        <textarea name="content" id="" cols="30" rows="10" placeholder="Content" ></textarea>
+        {{ form.as_p }}
         <button class="btn btn-secondary" type="submit">SUBMIT</button>
     </form>
 {% else %}
