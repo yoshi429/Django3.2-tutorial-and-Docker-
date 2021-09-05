@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
     django:
+    # Dockerfile を参照している
         build: .
         container_name: django
         command: python3 manage.py runserver 0.0.0.0:8000
