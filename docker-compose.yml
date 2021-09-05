@@ -11,7 +11,7 @@ services:
         ports:
             - "8000:8000"
         depends_on: 
-        # pgdbに依存しているの意
+        # pgdbに依存しているの意、連携
             - pgdb
     pgdb:
         image: postgres # dockerhub からのpostgresql
